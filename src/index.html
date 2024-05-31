@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weathermeter</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.29/"></script>
+  
+    <script type="module" src="https://js.arcgis.com/calcite-components/2.5.1/calcite.esm.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/2.5.1/calcite.css" />
+  
 </head>
 <body>
     <div class="weather-head">
@@ -118,22 +124,162 @@
             <span>Nearby Cities</span>
             <div class="nearby-cities">
                 <div class="nearby-city">
-                    <span>Dire Dawa</span>
+                    <span class="city-name__1">Dire Dawa</span>
+                    <div class="nearby-info">
+                    
+                            <img class="nearby-city-icon_1" src="./images/04n.png" alt="">
+                            <div>
+
+                                <p>Temperature</p>
+                                <span class="nearby-city-temp_1">29&deg;C</span>
+
+                            </div>
+                            <div>
+
+                                <p>Humidity</p><span class="nearby-city-humidity_1">29&deg;C</span>
+
+                            </div>
+
+                            <div>
+                                <p>Pressure</p><span class="nearby-city-pressure_1">29&deg;C</span>
+
+
+                            </div>
+                            <div>
+
+                                <p>Weather : </p> <span class="nearby-city-weather_1">29&deg;C</span>
+
+                            </div>
+                            <div>
+
+                                <p>Wind Speed </p> <span class="nearby-city-wind_1">29&deg;C</span>
+
+                            </div>
+
+
+
+                        
+                    </div>
                 </div>
                 <div class="nearby-city">
-                    <span>Addis Ababa</span>
+                    <span class="city-name__2">Dire Dawa</span>
+                    <div class="nearby-info">
+                    
+                            <img class="nearby-city-icon_2" src="./images/04n.png" alt="">
+                            <div>
+
+                                <p>Temperature</p>
+                                <span class="nearby-city-temp_2">29&deg;C</span>
+
+                            </div>
+                            <div>
+
+                                <p>Humidity</p><span class="nearby-city-humidity_2">29&deg;C</span>
+
+                            </div>
+
+                            <div>
+                                <p>Pressure</p><span class="nearby-city-pressure_2">29&deg;C</span>
+
+
+                            </div>
+                            <div>
+
+                                <p>Weather : </p> <span class="nearby-city-weather_2">29&deg;C</span>
+
+                            </div>
+                            <div>
+
+                                <p>Wind Speed </p> <span class="nearby-city-wind_2">29&deg;C</span>
+
+                            </div>
+
+
+
+                        
+                    </div>
                 </div>
                 <div class="nearby-city">
-                    <span>Harar</span>
+                    <span class="city-name__3">Dire Dawa</span>
+                    <div class="nearby-info">
+                    
+                            <img class="nearby-city-icon_3" src="./images/04n.png" alt="">
+                            <div>
+
+                                <p>Temperature</p>
+                                <span class="nearby-city-temp_3">29&deg;C</span>
+
+                            </div>
+                            <div>
+
+                                <p>Humidity</p><span class="nearby-city-humidity_3">29&deg;C</span>
+
+                            </div>
+
+                            <div>
+                                <p>Pressure</p><span class="nearby-city-pressure_3">29&deg;C</span>
+
+
+                            </div>
+                            <div>
+
+                                <p>Weather : </p> <span class="nearby-city-weather_3">29&deg;C</span>
+
+                            </div>
+                            <div>
+
+                                <p>Wind Speed </p> <span class="nearby-city-wind_3">29&deg;C</span>
+
+                            </div>
+
+
+
+                        
+                    </div>
                 </div>
                 <div class="nearby-city">
-                    <span>Adama</span>
+                    <span class="city-name__4">Dire Dawa</span>
+                    <div class="nearby-info">
+                    
+                            <img class="nearby-city-icon_4" src="./images/04n.png" alt="">
+                            <div>
+
+                                <p>Temperature</p>
+                                <span class="nearby-city-temp_4">29&deg;C</span>
+
+                            </div>
+                            <div>
+
+                                <p>Humidity</p><span class="nearby-city-humidity_4">29&deg;C</span>
+
+                            </div>
+
+                            <div>
+                                <p>Pressure</p><span class="nearby-city-pressure_4">29&deg;C</span>
+
+
+                            </div>
+                            <div>
+
+                                <p>Weather : </p> <span class="nearby-city-weather_4">29&deg;C</span>
+
+                            </div>
+                            <div>
+
+                                <p>Wind Speed </p> <span class="nearby-city-wind_4">29&deg;C</span>
+
+                            </div>
+
+
+
+                        
+                    </div>
                 </div>
+                
             </div>
         </div>
 
-        <div class="google-map">
-            <iframe src=" " frameborder="0"></iframe>
+        <div class="google-map" id="map">
         </div>
     </div>
 </body>
