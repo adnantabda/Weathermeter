@@ -230,10 +230,13 @@ body{
 
     .today-highlight{
         width: 90%;
-        height: 20rem;
+        height: 22rem;
         background-color: #808080;
         margin-top: 32px;
         border-radius: 12px;
+
+
+
 
         
         
@@ -251,6 +254,47 @@ body{
             // gap: 12px;
             // align-content: space-around;
             gap: 2rem;
+
+            .nearby-city{
+                padding-left: 24px;
+                padding-top: 10px;
+
+                .nearby-info{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+
+                    div{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 1px;
+
+                    }
+                    p{
+                        font-size: 14px;
+                        padding: 0;
+                        margin: 0;
+                        font-weight: 700;
+                        color: #808080;
+                    }
+                    img{
+                        width: 64px;
+                    }
+    
+                    span{
+                        font-size: 18px;
+                        align-self: flex-start;
+                        color: #0878e0;
+                        padding-left: 0;
+
+                    }
+                }
+
+            }
+
 
 
         }
@@ -279,14 +323,14 @@ body{
     }
 
     .google-map{
-        width: 70%;
+        width: 90%;
         height: 20rem;
-        background-color: #0B74D5;
+        // background-color: #0B74D5;
         justify-self: start;
         align-self: flex-start;
         margin-left: 5rem;
         margin-top: 32px;
-        border-radius: 12px;
+        border: 2px solid #0B74D5;
 
         iframe{
             width: 100%;
