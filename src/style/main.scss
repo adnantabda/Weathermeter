@@ -19,6 +19,16 @@ body{
     z-index: 2;
 
 
+    #error-message{
+        display: none;
+        position: absolute;
+        top: 54px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: red;
+        font-size: 12px;
+    }
+
+
     .search-bar{
         display: flex;
         justify-content: center;
@@ -45,6 +55,7 @@ body{
     
         }
     }
+
 
 
     .today-weather{
@@ -338,4 +349,109 @@ body{
         }
     }
 
+}
+
+@mixin media-md {
+    @media screen and (max-width: 768px) {
+        @content;
+        
+    }
+}
+
+@mixin media-lg {
+    @media screen and (max-width: 1024px) {
+        @content;
+        
+    }
+}
+
+@mixin media-xl {
+    @media screen and (max-width: 1600px) {
+        @content;
+        
+    }
+}
+
+@include media-lg{
+
+    .weather-head{
+        width: 40vw;
+    }
+    .weather-detail{
+        width: 60vw;
+
+
+        .nearby-city:last-child{
+            display: none;
+        }
+
+        .nearby-city{
+            transform: scale(0.8);
+            gap: 0;
+        }
+
+        .nearby-city:nth-child(3){
+            display: none;
+        }
+
+        .weather-sequences{
+            grid-template-columns: repeat(3,1fr);
+        }
+
+        .weather-sequence:last-child{
+            display: none;
+        }
+    }
+}
+
+@include media-md{
+    body{
+        flex-direction: column;
+    }
+    .weather-head{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+
+    .weather-detail{
+        width: 100vw;
+        // height: 100vh;
+        height: auto;
+        overflow-x: hidden;
+
+        .weather-sequences{
+            grid-template-columns: repeat(3 , 1fr);
+
+
+            .weather-sequence:last-child{
+                display: none;
+            }
+
+
+        }
+
+
+
+        .today-highlight{
+            height: 35rem;
+        }
+
+        .nearby-cities{
+            height: 30rem;
+            border-radius: 0;
+            flex-direction: column;
+        }
+        .nearby-city:last-child{
+            display: none;
+        }
+
+        .nearby-city:nth-child(3){
+            display: none;
+
+        }
+
+    }
+    
+    
 }
